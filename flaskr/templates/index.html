@@ -1,12 +1,17 @@
 <html>
     <head>
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles/main_styles.css')}}">
         <title>Политические Идеологии</title>
     </head>
     <body>
-        <h1>Политические Идеологии</h1>
-        <p>На данном сайте вы можете побольше узнать о разных полит. идеологиях</p>
-        <nav>
+        <h1 class="centered">Политические Идеологии</h1>
+        <img src="{{ url_for('static', filename='image/USSR.png') }}" width="250px" height="150px"/>
+        <img src="{{ url_for('static', filename='image/Nazi.png') }}" width="250px" height="150px"/>
+        <img src="{{ url_for('static', filename='image/Anarchy.png') }}" width="250px" height="150px"/>
+        <p class="centered" style="font-size: 25px;">На данном сайте вы можете побольше узнать о разных полит. идеологиях, движениях и идеях. <br>Список:</p>
+        <nav class="centered" style="font-size: 30px;">
             <a href=" {{ url_for('display_nazism') }}">Нацизм</a>
+            <br><a href=" {{ url_for('display_communism') }}">Коммунизм</a>
         </nav>
     </body>
 </html>

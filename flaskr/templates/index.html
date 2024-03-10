@@ -5,13 +5,9 @@
     </head>
     <body>
         <h1 class="centered">Политические Идеологии</h1>
-        <img src="{{ url_for('static', filename='image/USSR.png') }}" width="250px" height="150px"/>
-        <img src="{{ url_for('static', filename='image/Nazi.png') }}" width="250px" height="150px"/>
-        <img src="{{ url_for('static', filename='image/Anarchy.png') }}" width="250px" height="150px"/>
-        <p class="centered" style="font-size: 25px;">На данном сайте вы можете побольше узнать о разных полит. идеологиях, движениях и идеях. <br>Список:</p>
+        <p class="centered" style="font-size: 25px;">Политическое движение — это коллективная попытка группы людей изменить политику правительства или социальные ценности. Политические движения обычно противостоят какому-то элементу статус-кво и часто связаны с определенной идеологией.</p>
         <nav class="centered" style="font-size: 30px;">
-            <a href=" {{ url_for('display_nazism') }}">Нацизм</a>
-            <br><a href=" {{ url_for('display_communism') }}">Коммунизм</a>
+            <a href=" {{ url_for('display_spisok') }}">Список</a>
         </nav>
     </body>
 </html>

@@ -1,0 +1,21 @@
+<html>
+    <head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/main_styles.css')}}">
+    <title>Список</title>
+    </head>
+    <body>
+        <h1 class="centered">Список</h1>
+        <img src="{{ url_for('static', filename='image/USSR.png') }}" width="250px" height="150px"/>
+        <img src="{{ url_for('static', filename='image/Nazi.png') }}" width="250px" height="150px"/>
+        <img src="{{ url_for('static', filename='image/Anarchy.png') }}" width="250px" height="150px"/>
+        <img src="{{ url_for('static', filename='image/Monarchy.png') }}" width="250px" height="150px"/>
+        <img src="{{ url_for('static', filename='image/Liberalism.png') }}" width="150px" height="150px"/>
+        <nav class="centered" style="font-size: 30px;">
+        <a href=" {{ url_for('display_nazism') }}">Нацизм</a>
+        <br><a href=" {{ url_for('display_communism') }}">Коммунизм</a>
+        <br><a href=" {{ url_for('display_anarchism') }}">Анархизм</a>
+        <br><a href=" {{ url_for('display_monarchism') }}">Монархизм</a>
+        <br><a href=" {{ url_for('display_liberalism') }}">Либерализм</a>
+        </nav>
+    </body>
+</html>
